@@ -77,9 +77,9 @@ const BtnViewHoverEffect = () => {
     const cardsBtnView = document.querySelectorAll(".card");
   
     cardsBtnView.forEach((card) => {
-        const btnView = card.querySelector(".btn-success");
         const img = card.querySelector(".card-img-top");
         const textCard = card.querySelector("p.card-text");
+        const btnView = card.querySelector(".btn-success");
         let btnHovered = false;
     
         img.style.transition = "width 0.4s ease-in-out";
