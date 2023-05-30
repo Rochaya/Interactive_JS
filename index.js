@@ -54,7 +54,7 @@ const ChangeColorPrevious = () => {
 // Fonctionnalite 5 (je le ferais plus tard pas interessant de ouf)
 
 
-// Mal lu l'enoncer du 6 donc ici c'est une fonction pour modifier la taille d'une card au hover la 6 est juste en dessous.
+// Mal lu l'enoncer du 6 donc ici c'est une fonction pour modifier la taille d'une card au hover avec le over et le out nous ne sommes pas obliger de repasser sur la card pour qu'elle reprenne sa position initiale contrairement au enter dans la fonctionnalite 6 qui suivra juste en dessous.
 
 const reduceCardSizeOnHover = () => {
     const cardsHover = document.querySelectorAll(".card");
@@ -77,9 +77,9 @@ const BtnViewHoverEffect = () => {
     const cardsBtnView = document.querySelectorAll(".card");
   
     cardsBtnView.forEach((card) => {
+        const btnView = card.querySelector(".btn-success");
         const img = card.querySelector(".card-img-top");
         const textCard = card.querySelector("p.card-text");
-        const btnView = card.querySelector(".btn-success");
         let btnHovered = false;
     
         img.style.transition = "width 0.4s ease-in-out";
@@ -100,13 +100,16 @@ const BtnViewHoverEffect = () => {
     });
 };
 
-// Execution
+
+
+
+
+
 FooterClickEvent();
 CountClickEvent();
 ToggleNavbar();
 ChangeColor();
 ChangeColorPrevious();
 BtnViewHoverEffect();
-
 // reduceCardSizeOnHover();
 
